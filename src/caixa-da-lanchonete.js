@@ -1,7 +1,7 @@
 class CaixaDaLanchonete {
 
     constructor() {
-        // Defina os preços dos itens e combos aqui
+        // Definindo os preços dos itens e combos aqui
         this.prices = {
           cafe: 2.5,
           chantily: 1.5,
@@ -10,9 +10,17 @@ class CaixaDaLanchonete {
       }
 
     calcularValorDaCompra(metodoDePagamento, itens) {
-        return "";
+        // Verificando a forma de pagamento 
+    if (formaDePagamento !== 'debito' && formaDePagamento !== 'credito' && formaDePagamento !== 'dinheiro') {
+      return 'Forma de pagamento inválida!';
     }
 
+    // Criando um objeto para armazenar a contagem de itens
+    const itemQuantities = {};
+
+    
+  }
 }
+    
 
 export { CaixaDaLanchonete };
